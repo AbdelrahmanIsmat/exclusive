@@ -1,6 +1,7 @@
 import Perfume from "../assets/Perfume.svg";
 import PlayStation from "../assets/ps5-slim.svg";
 import Speakers from "../assets/Speakers.svg";
+import TopHeader from "./Header/TopHeader";
 
 const NewArrival = () => {
   return (
@@ -13,6 +14,7 @@ const NewArrival = () => {
     md:grid-rows-2
   "
     >
+      {/* <TopHeader title="Flash Sales" badge="Today’s" /> */}
       {/* PlayStation */}
       <div className="relative rounded-sm md:col-span-2 md:row-span-2 bg-black text-white overflow-hidden">
         <div

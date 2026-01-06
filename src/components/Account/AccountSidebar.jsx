@@ -7,8 +7,8 @@ const AccountSidebar = () => {
       : "text-gray-600 hover:text-black";
   return (
     <div className="">
-      <h2 className="font-semibold mb-3">Manage My Account</h2>
-      <nav className="flex flex-col gap-2 pl-3">
+      <h2 className="font-semibold ">Manage My Account</h2>
+      <nav className="flex flex-col gap-2 pl-3 my-3">
         <NavLink to="myProfile" className={linkClass}>
           My Profile
         </NavLink>
@@ -16,9 +16,8 @@ const AccountSidebar = () => {
           Payment Options
         </NavLink>
       </nav>
-      <h2 className="font-semibold mt-6 mb-3">My Orders</h2>
       <nav className="flex flex-col gap-2 pl-3">
-        <NavLink to="/myOrders" className={linkClass}>
+        <NavLink to="MyOrders" className={linkClass}>
           My Orders
         </NavLink>
       </nav>

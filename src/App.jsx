@@ -13,24 +13,27 @@ import { CartProvider } from "./components/context/CartContext";
 import SignUpPage from "./components/Account/SignUpPage";
 import LoginPage from "./components/Account/LoginPage";
 import { AuthProvider } from "./components/context/AuthContext";
-import MyAccount from "./components/Account/MyProfile";
 import AccountLayout from "./components/Account/AccountLayout";
 import MyProfile from "./components/Account/MyProfile";
 import PaymentOptions from "./components/Account/PaymentOptions";
+import MyOrders from "./components/Account/MyOrders";
+import ProductsPage from "./components/ProductsSection/ProductsPage";
 // import { supabase } from "./supabase";
 
 function App() {
   // console.log(supabase);
 
   return (
-    <div>
+    <div className="px-2.5">
       <CartProvider>
         <FavoritesProvider>
           <AuthProvider>
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Layout />}>
+                  <Route index element={<HomePage />} />
                   <Route path="/HomePage" element={<HomePage />} />
+                  <Route path="/ProductsPage" element={<ProductsPage />} />
                   <Route path="/ContactPage" element={<ContactPage />} />
                   <Route path="/AboutPage" element={<AboutPage />} />
                   <Route path="/SignUpPage" element={<SignUpPage />} />
@@ -45,6 +48,7 @@ function App() {
                     />
                     <Route path="MyProfile" element={<MyProfile />} />
                     <Route path="PaymentOptions" element={<PaymentOptions />} />
+                    <Route path="MyOrders" element={<MyOrders />} />
                     <Route path="wishlist" element={<WishlistPage />} />
                   </Route>
                   <Route

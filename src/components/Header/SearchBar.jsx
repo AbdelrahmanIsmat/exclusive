@@ -1,13 +1,12 @@
-const SearchBar = () => {
+const SearchBar = ({ value, onChange }) => {
   return (
     <div className="relative w-60 h-9.5">
-      {/* Background */}
       <div className="absolute inset-0 bg-[#F5F5F5] rounded-md" />
-
-      {/* Input */}
       <input
         type="text"
         placeholder="What are you looking for?"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         className="
           relative z-10
           w-full h-full
@@ -19,7 +18,6 @@ const SearchBar = () => {
         "
       />
 
-      {/* Search Icon */}
       <button
         aria-label="Search"
         className="absolute right-3 top-1/2 -translate-y-1/2 z-10"

@@ -3,6 +3,7 @@ import SectionHeader from "../SectionHeader";
 import ProductsSlider from "./ProductsSlider";
 import Button from "../common/Button";
 import { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const ProductsSection = ({
   title,
@@ -17,6 +18,7 @@ const ProductsSection = ({
       <div className="flex justify-between items-center flex-wrap mb-8">
         <SectionHeader badge={badge} title={title} />
         {/* {ArrowsButton && <ArrowsButton />} */}
+
         {showButton && buttonPosition === "header" && (
           <Button children={ButtonName} />
         )}

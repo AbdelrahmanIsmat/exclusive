@@ -36,7 +36,9 @@ const Header = () => {
             </div>
             {/* Actions تختفي من الهيدر لما ≤ 300px */}
             <HeaderActions />
-            <ProfileMenu />
+            <div className="hidden min-[900px]:block">
+              <ProfileMenu />
+            </div>
           </div>
         </div>
         {/* Search */}
@@ -63,15 +65,15 @@ const Header = () => {
           {/* زر إغلاق */}
           <button
             onClick={() => setOpen(false)}
-            className="lg:hidden mb-4 text-right w-full"
+            className="w-full text-right lg:hidden"
           >
             ❌
           </button>
-          <Logo />
-
-          <div className="flex flex-col items-start max-w-40 min-[900px]:hidden mt-4 pt-4">
+          {/* <Logo /> */}
+          <div className="flex flex-col gap-4 items-start max-w-40 min-[900px]:hidden">
             <div className="flex justify-center gap-10 my-2.5 max-[300px]:flex">
-              <HeaderActions />
+              {/* <HeaderActions /> */}
+              <ProfileMenu />
             </div>
             {/* Nav */}
             <div className="flex justify-center">

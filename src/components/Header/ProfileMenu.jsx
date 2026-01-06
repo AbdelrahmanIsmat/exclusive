@@ -29,7 +29,7 @@ const ProfileMenu = () => {
       {user ? (
         <button
           onClick={() => setOpen(!open)}
-          className="bg-[#DB4444] rounded-full w-8 h-8 flex items-center justify-center hover:scale-110 transition"
+          className="bg-[#DB4444] cursor-pointer rounded-full w-8 h-8 flex items-center justify-center hover:scale-110 transition"
         >
           <svg
             width="16"
@@ -51,7 +51,7 @@ const ProfileMenu = () => {
 
       {/* Dropdown */}
       {open && user && (
-        <div className="absolute -right-2 mt-3 w-56 rounded bg-linear-to-br from-[#8B6B92] to-[#311639] text-white shadow-lg p-4 z-50">
+        <div className="absolute  hidden min-[900px]:block -right-2 mt-3 w-56 rounded bg-linear-to-br from-[#8B6B92] to-[#311639] text-white shadow-lg p-4 z-50">
           <ul className="flex flex-col gap-4 text-sm">
             <li
               onClick={() => navigate("/AccountLayout")}
@@ -62,7 +62,7 @@ const ProfileMenu = () => {
             </li>
 
             <li
-              onClick={() => navigate("/orders")}
+              onClick={() => navigate("MyOrders")}
               className="flex items-center gap-3 cursor-pointer hover:opacity-80"
             >
               <img src={mallbag} alt="mallbag icon" />

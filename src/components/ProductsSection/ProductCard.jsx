@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useFavorites } from "../context/FavoritesProvider";
 import { useCart } from "../context/CartContext";
 import toast, { Toaster } from "react-hot-toast";
-
 const ProductCard = ({ product, fromWishlist = false }) => {
   const { addToFavorites, isFavorite, removeFromFavorites } = useFavorites();
   const { toggleCart, addOneToCart, isInCart } = useCart();

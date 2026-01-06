@@ -3,6 +3,7 @@ import Button from "../common/Button";
 import ProductCard from "./ProductCard";
 import SectionHeader from "../SectionHeader";
 import ArrowsButton from "../common/ArrowsButton";
+import { Link } from "react-router-dom";
 
 const ExploreProducts = () => {
   return (
@@ -18,7 +19,9 @@ const ExploreProducts = () => {
             <ProductCard key={product.id} product={product} />
           ))}
       </div>
-      <Button className={"m-auto mt-16"} children={"View All Products"} />
+      <Link className="m-auto" to="/ProductsPage">
+        <Button className={"m-auto mt-16"} children={"View All Products"} />
+      </Link>
     </section>
   );
 };
