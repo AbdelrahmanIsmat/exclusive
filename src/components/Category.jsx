@@ -36,13 +36,13 @@ const Category = () => {
         <SectionHeader badge="Categories" title="Browse By Category" />
         <ArrowsButton />
       </div>
-      <div className=" mb-16">
-        <div className="flex  gap-6">
+      <div className="mb-16 overflow-x-auto scroll-smooth">
+        <div className="flex gap-6 ">
           {categoriesData.map((category) => (
             <div
               key={category.id}
               className="group cursor-pointer rounded-sm hover:bg-[#DB4444] hover:shadow-md
-                transition duration-300 sm:min-w-40"
+                transition duration-300 sm:min-w-40 min-w-35"
             >
               <img
                 src={category.icon}

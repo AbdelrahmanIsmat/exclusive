@@ -11,7 +11,7 @@ import ExploreProducts from "../ProductsSection/ExploreProducts";
 
 const HomePage = () => {
   return (
-    <section className=" ">
+    <section className="px-2.5">
       <Hero />
       <ProductsSection
         title="Flash Sales"

@@ -51,7 +51,7 @@ const ProfileMenu = () => {
 
       {/* Dropdown */}
       {open && user && (
-        <div className="absolute  hidden min-[900px]:block -right-2 mt-3 w-56 rounded bg-linear-to-br from-[#8B6B92] to-[#311639] text-white shadow-lg p-4 z-50">
+        <div className="absolute -right-2 mt-3 w-56 rounded bg-linear-to-br from-[#8B6B92] to-[#311639] text-white shadow-lg p-4 z-50">
           <ul className="flex flex-col gap-4 text-sm">
             <li
               onClick={() => navigate("/AccountLayout")}

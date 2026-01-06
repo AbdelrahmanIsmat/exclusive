@@ -1,27 +1,12 @@
 import { Link } from "react-router-dom";
 import { useFavorites } from "../context/FavoritesProvider";
 import { useCart } from "../context/CartContext";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
+
 const ProductCard = ({ product, fromWishlist = false }) => {
   const { addToFavorites, isFavorite, removeFromFavorites } = useFavorites();
   const { toggleCart, addOneToCart, isInCart } = useCart();
-  // const toastError = () => {
-  //   toast.error(
-  //     <div className="flex flex-col items-center gap-3 ">
-  //       {<img className="h-15" src={product.image} alt={product.title} />}
-  //       {!isInCart(product.id) ? "Removed from Cart" : "Added to Cart"}
-  //       {
-  //         <Link
-  //           to="/CartPage"
-  //           className="text-[13px] rounded-full bg-[#DB4444] text-white px-10 py-3  "
-  //         >
-  //           Go to Cart
-  //         </Link>
-  //       }
-  //     </div>
-  //   ),
-  //     { duration: 3000 };
-  // };
+
   const toastSuccess = () =>
     toast.success(
       <div className="flex flex-col items-center gap-3 ">

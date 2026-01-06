@@ -13,7 +13,7 @@ const SectionHeader = ({ badge, title }) => {
             </p>
           </div>
           {title && (
-            <h3 className="my-5 text-[36px] font-Inter font-semibold">
+            <h3 className="my-5 text-2xl md:text-[36px] font-Inter font-semibold">
               {title}
             </h3>
           )}

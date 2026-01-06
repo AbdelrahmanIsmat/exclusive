@@ -35,10 +35,10 @@ const Header = () => {
               <SearchBar />
             </div>
             {/* Actions تختفي من الهيدر لما ≤ 300px */}
-            <HeaderActions />
             <div className="hidden min-[900px]:block">
-              <ProfileMenu />
+              <HeaderActions />
             </div>
+            <ProfileMenu />
           </div>
         </div>
         {/* Search */}
@@ -73,7 +73,7 @@ const Header = () => {
           <div className="flex flex-col gap-4 items-start max-w-40 min-[900px]:hidden">
             <div className="flex justify-center gap-10 my-2.5 max-[300px]:flex">
               {/* <HeaderActions /> */}
-              <ProfileMenu />
+              <HeaderActions />
             </div>
             {/* Nav */}
             <div className="flex justify-center">

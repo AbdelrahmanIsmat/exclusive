@@ -24,7 +24,7 @@ function App() {
   // console.log(supabase);
 
   return (
-    <div className="px-2.5">
+    <div>
       <CartProvider>
         <FavoritesProvider>
           <AuthProvider>
