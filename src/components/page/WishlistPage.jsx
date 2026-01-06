@@ -28,7 +28,7 @@ const WishlistPage = () => {
           children="Move All To Bag"
         />
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 overflow-x-auto scroll-smooth">
         {wishlistProducts.length === 0 && <p>No favorites yet</p>}
         {wishlistProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
@@ -38,7 +38,7 @@ const WishlistPage = () => {
         <SectionHeader badge="Just For You" />
         <Button variant="secondary" children="See All" />
       </div>
-      <div className="flex flex-row gap-3 ">
+      <div className="flex flex-row gap-3 overflow-x-auto scroll-smooth ">
         {/* {wishlistProducts.length === 0 && <p>No favorites yet</p>} */}
         {productsData.map((product) => (
           <ProductCard key={product.id} product={product} fromWishlist={true} />
