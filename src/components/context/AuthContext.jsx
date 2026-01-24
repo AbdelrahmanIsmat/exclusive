@@ -13,6 +13,10 @@ export const AuthProvider = ({ children }) => {
       setUser(data.session?.user ?? null);
       setLoading(false);
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
     // listen to auth changes
     const {
       data: { subscription },

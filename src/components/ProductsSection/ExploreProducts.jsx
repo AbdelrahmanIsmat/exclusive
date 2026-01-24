@@ -13,6 +13,10 @@ const ExploreProducts = () => {
         <SectionHeader badge="Our Products" title="Explore Our Products" />
         <ArrowsButton />
       </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       {/* Products Grid */}
       <div
         className="

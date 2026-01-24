@@ -3,6 +3,7 @@ import Button from "../common/Button";
 import Gamepad from "../../assets/items/Gamepad.svg";
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
+<<<<<<< HEAD
 // import { productsData } from "../../productsData";
 
 const CartPage = () => {
@@ -19,17 +20,46 @@ const CartPage = () => {
 
   const [animate, setAnimate] = useState({}); // Animation لكل منتج
 
+=======
+import { productsData } from "../../productsData";
+
+const CartPage = () => {
+  const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } =
+    useCart();
+  const [animate, setAnimate] = useState({}); // Animation لكل منتج
+
+  // ربط IDs بالمنتجات الكاملة
+  const cartProducts = cartItems.map((item) => {
+    const product = productsData.find((p) => p.id === item.id);
+    return { ...product, quantity: item.quantity };
+  });
+
+  // حساب Subtotal
+  const subtotal = cartProducts.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
+
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   // Animation
   const resetAnimation = (id) => {
     setTimeout(() => {
       setAnimate((prev) => ({ ...prev, [id]: "" }));
     }, 150);
   };
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   const handleIncrease = (id) => {
     setAnimate((prev) => ({ ...prev, [id]: "up" }));
     increaseQuantity(id);
     resetAnimation(id);
   };
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   const handleDecrease = (id) => {
     const product = cartItems.find((item) => item.id === id);
     if (!product) return;
@@ -121,11 +151,19 @@ const CartPage = () => {
 
       {/* Cart Summary */}
       <div className="flex flex-wrap justify-center lg:justify-between mt-20">
+<<<<<<< HEAD
         <div className="flex flex-col justify-center sm:items-start sm:flex-row gap-3 my-4">
           <input
             type="text"
             placeholder="Coupon Code"
             className="h-10 sm:h-12 border rounded px-4 outline-none focus:border-black"
+=======
+        <div className="flex flex-col items-start sm:flex-row gap-3 my-4">
+          <input
+            type="text"
+            placeholder="Coupon Code"
+            className="h-12 border rounded px-4 outline-none focus:border-black"
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
           />
           <Button>Apply Coupon</Button>
         </div>
@@ -135,18 +173,27 @@ const CartPage = () => {
 
           <div className="flex justify-between">
             <p>Subtotal:</p>
+<<<<<<< HEAD
             <p>${tatalAmount}</p>
+=======
+            <p>${subtotal}</p>
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
           </div>
           <hr className="my-4 text-gray-500" />
 
           <div className="flex justify-between">
             <p>Shipping:</p>
+<<<<<<< HEAD
             <p>${freeShipping === 0 ? "Free" : freeShipping}</p>
+=======
+            <p>Free</p>
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
           </div>
           <hr className="my-4 text-gray-500" />
 
           <div className="flex justify-between">
             <p>Total:</p>
+<<<<<<< HEAD
             <p>${tatalPrice}</p>
           </div>
 
@@ -156,6 +203,15 @@ const CartPage = () => {
                 <Button children="Proceed to checkout" />
               </Link>
             )}
+=======
+            <p>${subtotal}</p>
+          </div>
+
+          <div className="mt-6 flex justify-center">
+            <Link to="/CheckOutPage">
+              <Button children="Proceed to checkout" />
+            </Link>
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
           </div>
         </div>
       </div>

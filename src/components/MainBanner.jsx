@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
+=======
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 import JBL_BOOMBOX from "../assets/JBL_BOOMBOX.svg";
 
 const MainBanner = () => {
@@ -56,12 +59,18 @@ const MainBanner = () => {
             </span>
           </div>
 
+<<<<<<< HEAD
           <NavLink
             to="/ProductDetails/21"
             className="rounded-sm my-3 py-4 cursor-pointer text-white bg-[#00FF66] px-12 hover:bg-[#66ff99]"
           >
             Shop Now
           </NavLink>
+=======
+          <button className="rounded-sm my-3 py-4 cursor-pointer text-white bg-[#00FF66] px-12 hover:bg-[#66ff99]">
+            Shop Now
+          </button>
+>>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         </div>
         {/* Image (Desktop only) */}
         <div className="hidden md:flex ml-auto items-center justify-center">
