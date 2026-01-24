@@ -1,5 +1,4 @@
 import Button from "../common/Button";
-<<<<<<< HEAD
 import paymentIcon from "../../assets/paymentMethod.svg";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
@@ -7,17 +6,11 @@ import { useAuth } from "../context/AuthContext";
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-=======
-import paymentMethod from "../../assets/paymentMethod.svg";
-import { useCart } from "../context/CartContext";
-import { productsData } from "../../productsData";
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 
 const inputClass =
   "w-full py-3 px-4 bg-gray-100 text-sm rounded outline-none focus:ring-2 focus:ring-red-500";
 
 const CheckOutPage = () => {
-<<<<<<< HEAD
   const { tatalAmount, cartProducts, freeShipping, tatalPrice } = useCart();
   const { user, loading } = useAuth();
   const [paymentMethod, setPaymentMethod] = useState("");
@@ -66,21 +59,6 @@ const CheckOutPage = () => {
           },
         }}
       />
-=======
-  const { cartItems } = useCart();
-
-  const cartProducts = cartItems.map((item) => {
-    const product = productsData.find((p) => p.id === item.id);
-    return { ...product, quantity: item.quantity };
-  });
-
-  const total = cartProducts.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
-  return (
-    <section className=" max-w-6xl mx-auto px-5 my-20">
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       <div className="flex flex-col justify-between lg:flex-row gap-16">
         {/*  Billing Details  */}
         <div className="flex flex-col justify-center gap-5  ">
@@ -181,54 +159,34 @@ const CheckOutPage = () => {
             </div>
             <div className="flex justify-between">
               <p className="text-gray-600">Subtotal</p>
-<<<<<<< HEAD
               <p>${tatalAmount}</p>
             </div>
             <div className="flex justify-between">
               <h3 className="text-gray-600">Shipping</h3>
               <p>${freeShipping === 0 ? "Free" : freeShipping}</p>
-=======
-              <p>${total}</p>
-            </div>
-            <div className="flex justify-between">
-              <h3 className="text-gray-600">Shipping</h3>
-              <p>Free</p>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
             </div>
             <hr />
             <div className="flex justify-between font-semibold">
               <p>Total</p>
-<<<<<<< HEAD
               <p>${tatalPrice}</p>
             </div>
 
-=======
-              <p>${total}</p>
-            </div>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
             {/* Payment */}
             <div className="space-y-3 mt-4">
               <label className="flex items-center gap-3 text-sm cursor-pointer">
                 <input
                   type="radio"
                   name="payment"
-<<<<<<< HEAD
                   value="bank"
                   checked={paymentMethod === "bank"}
                   onChange={(e) => setPaymentMethod(e.target.value)}
                   required
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
                   className="accent-black w-4 h-4"
                 />
                 <span>Bank</span>
                 <img
                   className="hidden sm:block ml-auto max-w-30"
-<<<<<<< HEAD
                   src={paymentIcon}
-=======
-                  src={paymentMethod}
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
                   alt="Payment methods"
                 />
               </label>
@@ -237,19 +195,15 @@ const CheckOutPage = () => {
                 <input
                   type="radio"
                   name="payment"
-<<<<<<< HEAD
                   value="cash"
                   checked={paymentMethod === "cash"}
                   onChange={(e) => setPaymentMethod(e.target.value)}
                   required
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
                   className="accent-black w-4 h-4"
                 />
                 Cash on delivery
               </label>
             </div>
-<<<<<<< HEAD
             {paymentMethod === "bank" && (
               <div className="mt-4 p-4 border rounded bg-gray-50 space-y-3">
                 <p className="font-semibold text-sm">Bank Transfer Details</p>
@@ -287,30 +241,13 @@ const CheckOutPage = () => {
                 onClick={handleCheckout}
                 disabled={!paymentMethod}
               >
-=======
-            {/* Coupon */}
-            <div className="flex flex-col items-center sm:flex-row gap-3 mt-4">
-              <input
-                type="text"
-                placeholder="Coupon Code"
-                className="h-12 border rounded px-4 outline-none focus:border-black"
-              />
-              <Button>Apply Coupon</Button>
-            </div>
-            <div className="flex justify-center md:justify-start mt-4">
-              <Button onClick={() => alert("Order placed successfully!")}>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
                 Place Order
               </Button>
             </div>
           </div>
         </div>
       </div>
-<<<<<<< HEAD
     </form>
-=======
-    </section>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   );
 };
 

@@ -1,25 +1,17 @@
 import { Link } from "react-router-dom";
 import { useFavorites } from "../context/FavoritesProvider";
 import { useCart } from "../context/CartContext";
-<<<<<<< HEAD
 import { DialogPrimitive } from "../ui/DialogPrimitive";
 import { MdStar, MdStarBorder } from "react-icons/md";
 import { useState } from "react";
 import Button from "../common/Button";
 import toast from "react-hot-toast";
-=======
-import toast from "react-hot-toast";
-
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 const ProductCard = ({ product, fromWishlist = false }) => {
   const { addToFavorites, isFavorite, removeFromFavorites } = useFavorites();
   const { toggleCart, addOneToCart, isInCart } = useCart();
 
-<<<<<<< HEAD
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   const toastSuccess = () =>
     toast.success(
       <div className="flex flex-col items-center gap-3 ">
@@ -41,20 +33,12 @@ const ProductCard = ({ product, fromWishlist = false }) => {
       addOneToCart(product);
     } else {
       toggleCart(product);
-<<<<<<< HEAD
-=======
-      // toastError();
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       toastSuccess();
     }
   };
 
   return (
-<<<<<<< HEAD
     <div className="min-w-55 sm:min-w-62.5">
-=======
-    <div className="min-w-67.5">
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       {/* Card */}
       <div className="relative h-62.5 bg-[#F5F5F5] flex flex-col items-center justify-center rounded overflow-hidden group">
         {/* Discount */}
@@ -63,10 +47,6 @@ const ProductCard = ({ product, fromWishlist = false }) => {
             {product.discount}
           </span>
         )}
-<<<<<<< HEAD
-=======
-
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         {/* Heart */}
         <div className="absolute top-3 right-3">
           <button
@@ -175,7 +155,6 @@ const ProductCard = ({ product, fromWishlist = false }) => {
       <div className="flex items-center gap-1">
         <img src={product.ratingImage} alt="rating" />
         <span className="text-gray-500 text-sm">({product.reviews})</span>
-<<<<<<< HEAD
         <div className="px-8 py-4">
           <DialogPrimitive
             title="Review"
@@ -228,8 +207,6 @@ const ProductCard = ({ product, fromWishlist = false }) => {
             </form>
           </DialogPrimitive>
         </div>
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       </div>
     </div>
   );

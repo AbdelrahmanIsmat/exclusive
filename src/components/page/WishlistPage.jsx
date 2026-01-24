@@ -14,11 +14,7 @@ const WishlistPage = () => {
   );
   return (
     <section className="flex flex-col font-Poppins max-w-6xl mx-auto mt-10 mb-24 px-2 gap-4">
-<<<<<<< HEAD
       <div className="flex flex-row flex-wrap gap-5 justify-between  items-center">
-=======
-      <div className="flex flex-row flex-wrap gap-5 justify-center min-[450px]:justify-between  items-center">
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         <p className="text-xl font-normal ">
           Wishlist ({wishlistProducts.length})
         </p>
@@ -33,22 +29,14 @@ const WishlistPage = () => {
         />
       </div>
       <div className="flex gap-3 overflow-x-auto scroll-smooth">
-<<<<<<< HEAD
         {wishlistProducts.length === 0 && (
           <p className="text-gray-500 flex items-center">No favorites yet</p>
         )}
-=======
-        {wishlistProducts.length === 0 && <p>No favorites yet</p>}
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         {wishlistProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-<<<<<<< HEAD
       <div className="flex flex-row flex-wrap gap-5 justify-between  items-center mt-20 mb-10">
-=======
-      <div className="flex flex-row flex-wrap gap-5 justify-center min-[450px]:justify-between  items-center mt-20 mb-10">
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         <SectionHeader badge="Just For You" />
         <Button variant="secondary" children="See All" />
       </div>

@@ -1,10 +1,6 @@
 import Delivery from "../assets/icon-delivery.svg";
 import CustomerService from "../assets/Icon-Customer service.svg";
 import Secure from "../assets/Icon-secure.svg";
-<<<<<<< HEAD
-=======
-
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 const servicesData = [
   {
     id: 1,

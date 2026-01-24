@@ -18,7 +18,6 @@ import MyProfile from "./components/Account/MyProfile";
 import PaymentOptions from "./components/Account/PaymentOptions";
 import MyOrders from "./components/Account/MyOrders";
 import ProductsPage from "./components/ProductsSection/ProductsPage";
-<<<<<<< HEAD
 import CategoryPage from "./components/page/CategoryPage";
 import { Toaster } from "react-hot-toast";
 
@@ -36,15 +35,6 @@ function App() {
           },
         }}
       />
-=======
-// import { supabase } from "./supabase";
-
-function App() {
-  // console.log(supabase);
-
-  return (
-    <div>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
       <CartProvider>
         <FavoritesProvider>
           <AuthProvider>
@@ -61,10 +51,7 @@ function App() {
                   <Route path="/WishlistPage" element={<WishlistPage />} />
                   <Route path="/CartPage" element={<CartPage />} />
                   <Route path="/CheckOutPage" element={<CheckOutPage />} />
-<<<<<<< HEAD
                   <Route path="/CategoryPage" element={<CategoryPage />} />
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
                   <Route path="/AccountLayout" element={<AccountLayout />}>
                     <Route
                       index

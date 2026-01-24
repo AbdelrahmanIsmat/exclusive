@@ -14,14 +14,11 @@ import KidsElectricCar from "./assets/items/KidsElectricCar.svg";
 import SoccerCleats from "./assets/items/SoccerCleats.svg";
 import USBGamepad from "./assets/items/USBGamepad.svg";
 import QuiltedSatinJacket from "./assets/items/QuiltedSatinJacket.svg";
-<<<<<<< HEAD
 import IPhone from "./assets/IPhone.svg";
 import PlayStation from "./assets/ps5-slim.svg";
 import Speakers from "./assets/Speakers.svg";
 import Perfume from "./assets/Perfume.svg";
 import JBLBOOMBOX from "./assets/JBL_BOOMBOX.svg";
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 import Oneestar from "./assets/stars/OneStar.svg";
 import TowStar from "./assets/stars/TowStar.svg";
 import ThreeStar from "./assets/stars/ThreeStar.svg";
@@ -40,10 +37,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 88,
     category: "Flash Sales",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 2,
@@ -55,10 +49,7 @@ export const productsData = [
     ratingImage: FourStar,
     reviews: 75,
     category: "Flash Sales",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 3,
@@ -70,10 +61,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 99,
     category: "Flash Sales",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 4,
@@ -85,10 +73,7 @@ export const productsData = [
     ratingImage: FourHalfStar,
     reviews: 99,
     category: "Flash Sales",
-<<<<<<< HEAD
     categoryType: "Home & Lifestyle",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 5,
@@ -100,10 +85,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 65,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Women’s Fashion",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 6,
@@ -115,10 +97,7 @@ export const productsData = [
     ratingImage: FourHalfStar,
     reviews: 65,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Women’s Fashion",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 7,
@@ -130,10 +109,7 @@ export const productsData = [
     ratingImage: FourHalfStar,
     reviews: 65,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 8,
@@ -145,10 +121,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 65,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Home & Lifestyle",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 9,
@@ -160,10 +133,7 @@ export const productsData = [
     ratingImage: FourStar,
     reviews: 35,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Groceries & Pets",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 10,
@@ -175,10 +145,7 @@ export const productsData = [
     ratingImage: FourStar,
     reviews: 95,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 11,
@@ -190,10 +157,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 325,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 12,
@@ -205,10 +169,7 @@ export const productsData = [
     ratingImage: FourStar,
     reviews: 145,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Health & Beauty",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 13,
@@ -220,10 +181,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 65,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Baby & Toys",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 14,
@@ -235,10 +193,7 @@ export const productsData = [
     ratingImage: Fivestar,
     reviews: 35,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Sports & Outdoors",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 15,
@@ -250,10 +205,7 @@ export const productsData = [
     ratingImage: FourHalfStar,
     reviews: 55,
     category: "Explore Our Products",
-<<<<<<< HEAD
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
   {
     id: 16,
@@ -265,7 +217,6 @@ export const productsData = [
     ratingImage: FourHalfStar,
     reviews: 55,
     category: "Best Selling Products",
-<<<<<<< HEAD
     categoryType: "Men’s Fashion",
   },
   {
@@ -327,7 +278,5 @@ export const productsData = [
     reviews: 160,
     category: "Best Selling Products",
     categoryType: "Electronics",
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   },
 ];

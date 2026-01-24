@@ -30,11 +30,8 @@ const categoriesData = [
   { id: 6, icon: CategoryGaming, alt: "Category Gaming icon", name: "Gaming" },
 ];
 const Category = () => {
-<<<<<<< HEAD
   // const [categories, setCategories] = useState(categoriesData);
 
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   return (
     <div className="max-w-6xl mx-auto m-10">
       <div className="flex justify-between mb-8">

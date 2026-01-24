@@ -1,15 +1,11 @@
 import { createContext, useContext, useState } from "react";
-<<<<<<< HEAD
 import { productsData } from "../../productsData";
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-<<<<<<< HEAD
   // ربط IDs بالمنتجات الكاملة
   const cartProducts = cartItems.map((item) => {
     const product = productsData.find((p) => p.id === item.id);
@@ -25,8 +21,6 @@ export const CartProvider = ({ children }) => {
 
   const tatalPrice = tatalAmount + freeShipping;
 
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   // ❓ هل المنتج في السلة
   const isInCart = (id) => {
     return cartItems.some((item) => item.id === id);
@@ -111,13 +105,10 @@ export const CartProvider = ({ children }) => {
   return (
     <CartContext.Provider
       value={{
-<<<<<<< HEAD
         freeShipping,
         tatalPrice,
         cartProducts,
         tatalAmount,
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         cartItems,
         isInCart,
         toggleCart, // زر الكارد

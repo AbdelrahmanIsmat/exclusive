@@ -8,10 +8,6 @@ import { useCart } from "../context/CartContext";
 const HeaderActions = () => {
   const { favorites } = useFavorites();
   const { cartItems } = useCart();
-<<<<<<< HEAD
-
-=======
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
   return (
     <div className="flex items-center gap-4">
       {/* Wishlist */}

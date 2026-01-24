@@ -62,7 +62,7 @@ const ProfileMenu = () => {
             </li>
 
             <li
-              onClick={() => navigate("MyOrders")}
+              onClick={() => navigate("/AccountLayout/MyOrders")}
               className="flex items-center gap-3 cursor-pointer hover:opacity-80"
             >
               <img src={mallbag} alt="mallbag icon" />

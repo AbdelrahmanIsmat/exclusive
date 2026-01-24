@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import IPhone from "../assets/IPhone.svg";
 import appleIcon from "../assets/Apple_gray_logo 1.svg";
 import { NavLink } from "react-router-dom";
-=======
-import img from "../assets/hero_endframe__cvklg0xk3w6e_large 2.svg";
-import appleIcon from "../assets/Apple_gray_logo 1.svg";
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
 
 const Hero = () => {
   return (
@@ -30,11 +25,7 @@ const Hero = () => {
         {/* Background Image (Mobile only) */}
         <div
           className="min-[375px]:block lg:hidden absolute inset-0 bg-no-repeat bg-center bg-contain opacity-30 flex "
-<<<<<<< HEAD
           style={{ backgroundImage: `url(${IPhone})` }}
-=======
-          style={{ backgroundImage: `url(${img})` }}
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
         />
         {/* Text */}
         <div className="relative z-10 text-white max-w-md ">
@@ -46,13 +37,9 @@ const Hero = () => {
             Up to 10% off Voucher
           </h2>
           <div className="flex gap-3 items-center cursor-pointer">
-<<<<<<< HEAD
             <NavLink to="/ProductDetails/17" className="border-b">
               Shop Now
             </NavLink>
-=======
-            <p className="border-b">Shop Now</p>
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
             <svg
               width="24"
               height="24"
@@ -74,11 +61,7 @@ const Hero = () => {
         <div className="hidden lg:flex ml-auto items-center justify-center">
           <img
             className="max-h-96 cursor-pointer hover:animate-pulse"
-<<<<<<< HEAD
             src={IPhone}
-=======
-            src={img}
->>>>>>> f9d48f2a3213b1a0d332ed53559d7da121579cd4
             alt="hero_endframe"
           />
         </div>
